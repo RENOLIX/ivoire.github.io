@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=11">
-  <script src="app.js?v=1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=12">
+  <script src="app.js?v=2" defer></script>
 </head>
 <body>
   <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
@@ -42,11 +42,11 @@
       <div class="hero-grid section-wrap">
         <div class="hero-copy">
           <p class="eyebrow"><span></span> SHAMPOING SOLIDE ANTI-CHUTE <span class="ar" lang="ar" dir="rtl">شامبو صلب مقوٍّ</span></p>
-          <h1>La nature au cœur de <em>vos cheveux.</em></h1>
-          <p class="ar hero-ar" lang="ar" dir="rtl">الطبيعة في قلب روتين شعرك</p>
-          <p class="hero-intro">Un rituel simple pour prendre soin des cheveux fragilisés. Shikakai, sidr et amla réunis dans un shampoing solide, doux et sans sulfates.</p>
-          <div class="hero-mini"><div><svg class="icon"><use href="#i-leaf"/></svg><span>Ingrédients naturels<br><small class="ar" lang="ar" dir="rtl">مكونات طبيعية</small></span></div><div><svg class="icon"><use href="#i-drop"/></svg><span>Sans sulfates<br><small class="ar" lang="ar" dir="rtl">بدون كبريتات</small></span></div><div><svg class="icon"><use href="#i-heart"/></svg><span>Tout en douceur<br><small class="ar" lang="ar" dir="rtl">عناية لطيفة</small></span></div></div>
-          <a class="hero-mobile-link" href="#commande-form">Passer commande <span class="ar" lang="ar" dir="rtl">اطلبي الآن</span> <svg class="icon"><use href="#i-arrow"/></svg></a>
+          <h1>Vos cheveux tombent plus en automne ? <em>Agissez dès maintenant.</em></h1>
+          <p class="ar hero-ar" lang="ar" dir="rtl">شعركِ يتساقط أكثر في الخريف؟ ابدئي العناية من الآن.</p>
+          <p class="hero-intro">Shampoing solide concentré en actifs végétaux pour prendre soin des cheveux faibles et sujets à la chute.</p>
+          <p class="ar hero-ar hero-ar-detail" lang="ar" dir="rtl">شامبو صلب مركز جدًا بالمكونات النباتية الفعالة للعناية بالشعر الضعيف والمعرض للتساقط</p>
+          <div class="hero-actives"><span> Shikakai · Sidr · Amla</span><span> Romarin · Cèdre d’Atlas · Lavande</span><small>Sans sulfates · Riche en actifs · Format concentré</small></div>
         </div>
 
         <div class="hero-product">
@@ -54,6 +54,10 @@
         </div>
 
         <form id="commande-form" class="order-form" novalidate>
+          <input type="hidden" name="access_key" value="22367ca9-ef82-4b01-b7cd-e6b393a231a1">
+          <input type="hidden" name="subject" value="Nouvelle commande Ivoire Natural Care">
+          <input type="hidden" name="from_name" value="Formulaire Ivoire Natural Care">
+          <input type="hidden" name="botcheck" value="">
           <div class="form-heading"><p>VOTRE RITUEL COMMENCE ICI · <span class="ar" lang="ar" dir="rtl">روتينك يبدأ هنا</span></p><h2>Commandez <em>maintenant.</em></h2><span class="ar form-ar" lang="ar" dir="rtl">اطلبي الآن</span><span class="price-pill">950 DA</span></div>
           <p class="form-intro">Renseignez vos coordonnées pour préparer votre commande.<br><span class="ar" lang="ar" dir="rtl">أدخلي معلوماتك لتحضير الطلب</span></p>
           <div class="form-grid">
@@ -68,7 +72,7 @@
           <div class="form-total"><span>Produit <b id="subtotal">950 DA</b></span><span>Livraison <b>À confirmer</b></span><strong>Total hors livraison <b id="total">950 DA</b></strong></div>
           <button class="submit" type="submit">Préparer ma commande · <span class="ar" lang="ar" dir="rtl">تحضير طلبي</span> <svg class="icon"><use href="#i-arrow"/></svg></button>
           <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
-          <p class="form-foot">Formulaire visuel : aucune commande n’est transmise pour l’instant.<br><span class="ar" lang="ar" dir="rtl">النموذج للعرض فقط، لا يُرسل الطلب حالياً.</span></p>
+          <p class="form-foot">Envoi sécurisé et instantané par e-mail.<br><span class="ar" lang="ar" dir="rtl">يتم إرسال طلبك فوراً وبشكل آمن عبر البريد الإلكتروني.</span></p>
           <div class="form-assurance"><span><svg class="icon"><use href="#i-truck"/></svg> Livraison en Algérie</span><span><svg class="icon"><use href="#i-shield"/></svg> Paiement à la réception</span></div>
         </form>
       </div>
@@ -78,11 +82,14 @@
       <div class="autumn-inner section-wrap">
         <div class="autumn-copy">
           <p class="eyebrow"><span></span> AU FIL DES SAISONS <span class="ar" lang="ar" dir="rtl">مع تغيّر الفصول</span></p>
-          <h2 id="autumn-title">L’automne est là…<br><em>et vos cheveux le remarquent.</em></h2>
-          <p class="ar section-ar" lang="ar" dir="rtl">الخريف وصل… وشعرك يحسّ بالتغيير</p>
-          <p>À certaines périodes de l’année, les cheveux peuvent sembler plus fragiles et la chute plus visible. C’est le moment idéal pour adopter une routine douce, pensée pour prendre soin de votre cuir chevelu.</p>
-          <p class="ar autumn-detail" lang="ar" dir="rtl">في بعض الفترات يصبح الشعر أكثر هشاشة. اختاري روتيناً لطيفاً للعناية بفروة رأسك.</p>
-          <a class="text-link" href="#ingredients">Découvrir les ingrédients <svg class="icon"><use href="#i-arrow"/></svg></a>
+          <h2 id="autumn-title">L’automne est là.</h2>
+          <p class="ar section-ar" lang="ar" dir="rtl">حلّ الخريف… وحان وقت تعزيز روتين العناية بشعركِ.</p>
+          <p>C’est le moment de renforcer votre routine.</p>
+          <p>À l’automne, vos cheveux peuvent sembler plus fragiles et la chute plus visible. C’est pourquoi nous avons conçu une formule hautement concentrée en actifs végétaux, pensée pour accompagner votre routine dès les premiers signes.</p>
+          <p class="autumn-actives">Shikakai · Sidr · Amla · Romarin · Cèdre d’Atlas · Lavande</p>
+          <p class="autumn-closing">Une formule concentrée. Un geste simple. Une routine pensée pour la saison.</p>
+          <p class="ar autumn-detail" lang="ar" dir="rtl">تركيبة مركزة. خطوة بسيطة. روتين مصمم لهذا الموسم.</p>
+          <a class="text-link" href="#ingredients">DÉCOUVRIR LA FORMULE <svg class="icon"><use href="#i-arrow"/></svg></a>
         </div>
         <div class="autumn-image"><img src="assets/brosse-automne.jpg" alt="Brosse en bois avec quelques cheveux, dans une ambiance douce d’automne" loading="lazy" width="1776" height="887"></div>
       </div>
@@ -90,9 +97,9 @@
 
     <div class="trust-strip section-wrap" aria-label="Les essentiels Ivoire"><div><svg class="icon"><use href="#i-leaf"/></svg><span>100% naturel<br><small class="ar" lang="ar" dir="rtl">طبيعي ١٠٠٪</small></span></div><div><svg class="icon"><use href="#i-drop"/></svg><span>Sans sulfates<br><small class="ar" lang="ar" dir="rtl">بدون كبريتات</small></span></div><div><svg class="icon"><use href="#i-box"/></svg><span>Format solide<br><small class="ar" lang="ar" dir="rtl">شامبو صلب</small></span></div><div><svg class="icon"><use href="#i-truck"/></svg><span>Livraison<br><small class="ar" lang="ar" dir="rtl">في كل الجزائر</small></span></div></div>
 
-    <section class="ingredients" id="ingredients"><div class="section-wrap ingredients-inner"><div class="ingredients-top"><p class="eyebrow"><span></span> LES INGRÉDIENTS <span class="ar" lang="ar" dir="rtl">المكونات</span></p><h2>Shikakai. Sidr. <em>Amla.</em></h2><p class="ar section-ar" lang="ar" dir="rtl">شيكاكاي · سدر · أملا</p><p>Trois essentiels au service de votre routine capillaire.</p></div><div class="ingredient-grid"><article><img class="ingredient-photo" src="assets/ingredient-shikakai-v2.png" alt="Gousses de shikakai" width="500" height="500" loading="eager"><h3>Shikakai <span class="ar" lang="ar" dir="rtl">شيكاكاي</span></h3><p>Nettoie en douceur.</p><small class="ar" lang="ar" dir="rtl">تنظيف لطيف</small></article><article><img class="ingredient-photo" src="assets/ingredient-sidr-v2.png" alt="Poudre de sidr et feuilles" width="500" height="500" loading="eager"><h3>Sidr <span class="ar" lang="ar" dir="rtl">سدر</span></h3><p>Un soin pour le cuir chevelu.</p><small class="ar" lang="ar" dir="rtl">عناية بفروة الرأس</small></article><article><img class="ingredient-photo" src="assets/ingredient-amla-v2.png" alt="Fruits verts amla" width="500" height="500" loading="eager"><h3>Amla <span class="ar" lang="ar" dir="rtl">أملا</span></h3><p>Pour l’éclat des cheveux.</p><small class="ar" lang="ar" dir="rtl">لمعان الشعر</small></article></div></div></section>
+    <section class="ingredients" id="ingredients"><div class="section-wrap ingredients-inner"><div class="ingredients-top"><p class="eyebrow"><span></span> LES INGRÉDIENTS <span class="ar" lang="ar" dir="rtl">المكونات</span></p><h2>Shikakai. Sidr. <em>Amla.</em></h2><p class="ar section-ar" lang="ar" dir="rtl">شيكاكاي · سدر · أملا</p><p>Trois essentiels au service de votre routine capillaire.</p></div><div class="ingredient-grid"><article><img class="ingredient-photo" src="assets/ingredient-shikakai-v2.png" alt="Gousses de shikakai" width="500" height="500" loading="eager"><h3>Shikakai <span class="ar" lang="ar" dir="rtl">شيكاكاي</span></h3><p>Nettoie en douceur.</p><small class="ar" lang="ar" dir="rtl">تنظيف لطيف</small></article><article><img class="ingredient-photo" src="assets/ingredient-sidr-v2.png" alt="Poudre de sidr et feuilles" width="500" height="500" loading="eager"><h3>Sidr <span class="ar" lang="ar" dir="rtl">سدر</span></h3><p>Un soin pour le cuir chevelu.</p><small class="ar" lang="ar" dir="rtl">عناية بفروة الرأس</small></article><article><img class="ingredient-photo" src="assets/ingredient-amla-v2.png" alt="Fruits verts amla" width="500" height="500" loading="eager"><h3>Amla <span class="ar" lang="ar" dir="rtl">أملا</span></h3><p>Pour l’éclat des cheveux.</p><small class="ar" lang="ar" dir="rtl">لمعان الشعر</small></article></div><div class="essential-oils"><p>Huile essentielle de :</p><span>Romarin</span><span>Eucalyptus</span><span>Lavande</span></div></div></section>
 
-    <section class="before-after section-wrap" id="avant-apres" aria-labelledby="before-after-title"><div class="before-after-head"><p class="eyebrow"><span></span> AVANT / APRÈS <span class="ar" lang="ar" dir="rtl">قبل / بعد</span></p><h2 id="before-after-title">Le plaisir de cheveux <em>soignés.</em></h2><p class="ar section-ar" lang="ar" dir="rtl">روتين لطيف لشعر أجمل</p><p>Deux comparaisons avant/après de la ligne frontale et de la raie des cheveux.</p></div><div class="before-after-grid"><figure><div class="comparison-photo"><img src="assets/avant-apres-ligne.jpg" alt="Comparaison avant et après de la ligne frontale fournie par Ivoire" width="1080" height="1080" loading="lazy"></div><figcaption>La ligne frontale <span class="ar" lang="ar" dir="rtl">مقدمة الشعر</span></figcaption></figure><figure><div class="comparison-photo"><img src="assets/avant-apres-raie.jpg" alt="Comparaison avant et après de la raie des cheveux fournie par Ivoire" width="1080" height="1080" loading="lazy"></div><figcaption>La raie des cheveux <span class="ar" lang="ar" dir="rtl">فرق الشعر</span></figcaption></figure></div></section>
+    <section class="before-after section-wrap" id="avant-apres" aria-labelledby="before-after-title"><div class="before-after-head"><p class="eyebrow"><span></span> AVANT / APRÈS <span class="ar" lang="ar" dir="rtl">قبل / بعد</span></p><h2 id="before-after-title">Découvrez le résultat <em>de nos clients.</em></h2><p class="ar section-ar" lang="ar" dir="rtl">اكتشفي نتائج زبائننا</p><p>Deux comparaisons avant/après de la ligne frontale et de la raie des cheveux.</p></div><div class="before-after-grid"><figure><div class="comparison-photo"><img src="assets/avant-apres-ligne.jpg" alt="Comparaison avant et après de la ligne frontale fournie par Ivoire" width="1080" height="1080" loading="lazy"></div><figcaption>La ligne frontale <span class="ar" lang="ar" dir="rtl">مقدمة الشعر</span></figcaption></figure><figure><div class="comparison-photo"><img src="assets/avant-apres-raie.jpg" alt="Comparaison avant et après de la raie des cheveux fournie par Ivoire" width="1080" height="1080" loading="lazy"></div><figcaption>La raie des cheveux <span class="ar" lang="ar" dir="rtl">فرق الشعر</span></figcaption></figure></div></section>
 
     <section class="ritual section-wrap" id="rituel"><div class="ritual-head"><p class="eyebrow"><span></span> MODE D’EMPLOI <span class="ar" lang="ar" dir="rtl">طريقة الاستعمال</span></p><h2>Un rituel simple <em>en 3 étapes.</em></h2><p class="ar section-ar" lang="ar" dir="rtl">روتين بسيط في ٣ خطوات</p><p>Quelques gestes suffisent pour prendre soin de vos cheveux.</p></div><div class="ritual-grid"><article><div class="ritual-photo"><img src="assets/rituel-mouiller.png" alt="Main mouillant le shampoing solide Ivoire" loading="lazy"><span>01</span></div><h3>Mouiller</h3><p>Mouillez vos cheveux et le shampoing solide.</p><small class="ar" lang="ar" dir="rtl">بلّلي شعرك والشامبو</small></article><article><div class="ritual-photo"><img src="assets/rituel-mousser.png" alt="Mains faisant mousser le shampoing solide" loading="lazy"><span>02</span></div><h3>Faire mousser</h3><p>Frottez délicatement entre les mains ou sur le cuir chevelu.</p><small class="ar" lang="ar" dir="rtl">دلّكي بلطف لتكوين الرغوة</small></article><article><div class="ritual-photo"><img src="assets/rituel-rincer.png" alt="Cheveux brillants après rinçage" loading="lazy"><span>03</span></div><h3>Rincer</h3><p>Massez, rincez et profitez de votre nouvelle routine.</p><small class="ar" lang="ar" dir="rtl">اشطفي واستمتعي بروتينك</small></article></div></section>
 
