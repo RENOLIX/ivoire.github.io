@@ -20,15 +20,26 @@ function update(){
 $('#minus').addEventListener('click',()=>{quantity=Math.max(1,quantity-1);update()});
 $('#plus').addEventListener('click',()=>{quantity=Math.min(20,quantity+1);update()});
 document.querySelectorAll('input[name="Mode de livraison"]').forEach(input=>input.addEventListener('change',update));
-form.addEventListener('submit',event=>{
+form.addEventListener('submit',async event=>{
   event.preventDefault();
   const phone=form.elements['Téléphone'];
   const normalized=phone.value.replace(/[\s.\-()]/g,'');
   phone.setCustomValidity(/^(?:0[567]\d{8}|\+213[567]\d{8})$/.test(normalized)?'':'Saisissez un numéro algérien valide (05, 06, 07 ou +213).');
   if(!form.reportValidity())return;
   const status=$('#form-status');
+  const submit=form.querySelector('button[type="submit"]');
   status.hidden=false;
-  status.textContent='Votre formulaire est prêt. L’envoi des commandes sera activé dès qu’une destination de réception sera configurée.';
+  status.textContent='Envoi de votre commande…';
+  submit.disabled=true;
+  try{
+    const response=await fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+    const result=await response.json();
+    if(!response.ok||!result.success) throw new Error(result.message||'Erreur d’envoi');
+    window.location.href='merci.html';
+  }catch(error){
+    status.textContent='Impossible d’envoyer le formulaire pour le moment. Vérifiez votre connexion puis réessayez.';
+    submit.disabled=false;
+  }
   status.scrollIntoView({behavior:'smooth',block:'nearest'});
 });
 form.elements['Téléphone'].addEventListener('input',event=>event.target.setCustomValidity(''));
