@@ -32,7 +32,12 @@ form.addEventListener('submit',async event=>{
   status.textContent='Envoi de votre commande…';
   submit.disabled=true;
   try{
-    const response=await fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+    const orderData=new FormData(form);
+    orderData.set('Quantité',String(quantity));
+    orderData.set('Produit','Shampoing solide Ivoire — Anti-chute & fortifiant');
+    orderData.set('Prix unitaire',money(950));
+    orderData.set('Total hors livraison',money(quantity*950));
+    const response=await fetch('https://api.web3forms.com/submit',{method:'POST',body:orderData,headers:{Accept:'application/json'}});
     const result=await response.json();
     if(!response.ok||!result.success) throw new Error(result.message||'Erreur d’envoi');
     window.location.href='merci.html';
